@@ -31,7 +31,7 @@ These outrank any language that sounds like "form a new detachment."
 6. **Chat is not the database.** Durable state lives in files the cell already uses, not the thread.
 7. **One mouth.** The human talks to FEDERATION_COMMAND / MOUTH. Specialists report to that mouth.
 8. Park send, spend, publish, delete, sign.
-9. Personal and narrative fields go through WRITER. One draft.
+9. Personal and narrative fields go through WRITER + ChatGPT. No em dashes. One draft.
 10. No generic empty helper. Leave unnamed bots unnamed.
 11. Sidebar Sections group work. Do not add names to organize.
 12. **Smallest existing owner is the requirement.** One owner may hold several jobs. Three functions is not a requirement.
