@@ -1,57 +1,77 @@
-# Grok Cell skills
+# GrokCell
 
-Reusable how-to files for a Federated Grok Cell: a small, role-locked set of Grok Bots with one mouth to the human.
+Fifteen skills forming an organizational runtime for a federated Grok Bot cell — command, reconnaissance, force composition, construction, recovery, assurance, and organizational learning.
 
-This repo is the public playbook. Identity, emails, phones, tracker URLs, and bot UUIDs stay in [PROFILE.md](PROFILE.md). Copy that file, fill the slots, keep it private.
+## Layout
 
-## What a Grok Cell skill is
+Each skill is a directory whose name matches its frontmatter `name:`, containing a single `SKILL.md`:
 
-A skill is how. A routine is when. Official Grok Bot docs: skill first, then a Test run (real work), then a routine. [docs.x.ai/grok-bot/skills-routines-and-automations](https://docs.x.ai/grok-bot/skills-routines-and-automations)
+```
+grokcell-oda/SKILL.md
+grokcell-mission-command/SKILL.md
+...
+```
 
-A Cell skill is a skill that also names owners and a park gate. It does not invent a new bot. It runs on bots you already have.
+## Install
 
-Cell laws (locked):
+Copy the skill directories (not `_originals/` or this file) into a skills root:
 
-1. One mouth. The human talks to one coordinator. Specialists report to that mouth.
-2. Two to four specialists per rail. Groups of 2-6 only when the handoff must be visible.
-3. A new rail is a skill on an existing owner, not a new bot.
-4. Personal and narrative fields go through a writer plus ChatGPT. No em dashes. One draft.
-5. Draft and fill to the submit gate. The human submits unless the mouth already named a submit.
-6. Park send, spend, publish, delete, and sign.
-7. No Cursor Cloud Agent unless the mouth names it. Those spend the Cursor allowance, not the Grok Bot bucket.
-8. No generic empty helper. Leave unnamed bots unnamed.
-9. Sidebar Sections group work. Do not add names to organize.
+```bash
+# user-level — available in every project
+cp -r grokcell-*/ ~/.claude/skills/
 
-Spawn test (all three must be true before you create a bot):
+# project-level — available only in that repo
+cp -r grokcell-*/ /path/to/project/.claude/skills/
+```
 
-- the rail has been daily for several days
-- the current owner's description would become two jobs
-- a one-paragraph law can be written
+Then `/grokcell-oda`, `/grokcell-recon`, and so on. Skills also load automatically when a request matches their `description:`.
 
-If any fail, keep the skill.
+## The skills
 
-## What is in here
+**⚪ Doctrine** — the substrate everything else runs on
 
-| Path | What it is |
+| Skill | Answers |
 |---|---|
-| [PROFILE.md](PROFILE.md) | Slots the adopter fills. Not committed with real values. |
-| [skills/federated-cell/SKILL.md](skills/federated-cell/SKILL.md) | When to form a Cell, spawn test, do-alone vs park. |
-| [skills/hunt-apply/SKILL.md](skills/hunt-apply/SKILL.md) | Three apply rails: LinkedIn Easy Apply, Greenhouse, YC Work at a Startup. ChatGPT for personal questions. Stop at submit. |
-| [skills/grokcell-mission-command/SKILL.md](skills/grokcell-mission-command/SKILL.md) | Command layer. Issues intent and authority. ODA owns local organization. Recon / Force Generation / OpsGraph / Sentinel / Sustainment are interfaces, not bot names. Do not spawn to match them. |
-| [skills/grokcell-oda/SKILL.md](skills/grokcell-oda/SKILL.md) | Organizational runtime. Organization exists for the mission; do not spawn to match Scout/Forge/Integrator labels. |
-| [routines/prepare-then-stop.md](routines/prepare-then-stop.md) | Weekday prepare-then-stop template. Silence is valid. |
+| `grokcell-oda` | Should this be a new bot, a skill on an existing owner, or nothing? |
+| `grokcell-command-and-control` | How does the federation stay coherent while cells act independently? |
+| `grokcell-chromatic-doctrine` | What kind of work does this problem require? |
+| `grokcell-black-protocol` | Normal control has become unsafe — what stops, what is preserved? |
 
-Only skills that have been run, or Cell laws already locked, live here. No invented rails.
+**🟡 Command** — intent, organization, shared reality
 
-## How to load
+| Skill | Answers |
+|---|---|
+| `grokcell-mission-command` | Why, what success looks like, who may decide what |
+| `grokcell-force-generation` | What is the smallest organization that can produce this effect? |
+| `grokcell-common-operational-picture` | What is happening now, and who needs to know? |
 
-1. Fill a private copy of PROFILE.md.
-2. Paste the skill body into Grok Bot (Plugins, or a saved skill). Point it at your PROFILE, not this public file.
-3. Run one real task. Correct it. Then a Test run. Then the routine on the mouth bot.
-4. Do not schedule a demo. A test run does real work.
+**🔴 Know** — reduce uncertainty, challenge confidence
 
-## What this is not
+| Skill | Answers |
+|---|---|
+| `grokcell-recon` | What must we understand before committing? |
+| `grokcell-red-team` | What if the frame, not the implementation, is wrong? |
 
-Not a swarm. Not an applicant-side apply factory. Official Talent Scout is employer-side. The pattern that exists: research, draft, fill, stop at the gate.
+**🔵 Make · 🟢 Restore** — build and keep working
 
-Bots share one computer. They are not a security boundary. [docs.x.ai/grok-bot/approvals-security-and-privacy](https://docs.x.ai/grok-bot/approvals-security-and-privacy)
+| Skill | Answers |
+|---|---|
+| `grokcell-forge` | What is the smallest coherent thing that causes the effect? |
+| `grokcell-recovery-repair` | What broke, how far did it spread, what is the safest way back? |
+| `grokcell-sustainment` | What must stay healthy so recovery stays rare? |
+
+**🟣 Learn** — turn experience into capability
+
+| Skill | Answers |
+|---|---|
+| `grokcell-after-action` | What should change because of what actually happened? |
+| `grokcell-routine-compiler` | What should we stop reasoning through from scratch? |
+| `grokcell-capability-registry` | Who or what can reliably do this right now? |
+
+## Conventions
+
+Every skill opens with a **Fast path** — a ladder where you stop at the first rung that holds, so the common case exits in a few lines — and closes with **Done when**, stating verifiable completion. In between: a numbered Constitution of invariants, and an anti-patterns table naming the failure modes.
+
+Shared ordering when uncertain:
+
+> **INTENT → EFFECT → EVIDENCE → TEMPO → ORGANIZATIONAL LEARNING → CEREMONY**
