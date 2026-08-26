@@ -16,7 +16,7 @@ Stop at the first rung that holds.
 
 1. **Verified capability already exists** → reuse it. Search the repo and known artifacts first.
 2. **One decisive uncertainty gates the design** → build the cheap probe that eliminates a branch. Not the system.
-3. **Terrain is clear and the change is small and reversible** → build it, self-check, register the artifact. Done.
+3. **Terrain is clear and the change is small and reversible** → build it, self-check. Done.
 4. **Multiple systems interact** → define the interface contract first, then a thin end-to-end slice.
 5. **High consequence** → make state, failure, and rollback visible before expanding scope.
 

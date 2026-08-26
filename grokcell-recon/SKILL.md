@@ -1,7 +1,8 @@
 ---
 name: grokcell-recon
 description: >-
-  Use before expensive commitment and whenever terrain changes: to find what
+  Use when recon is needed before expensive commitment and whenever terrain
+  changes: to find what
   already exists, map interfaces and dependencies, surface critical assumptions
   and unknowns, locate the bottleneck, compare routes, and state what
   capabilities execution will need.

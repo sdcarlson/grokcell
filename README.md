@@ -46,4 +46,4 @@ Every skill opens with a **Fast path** (stop at the first rung that holds) and c
 
 Shared ordering when uncertain:
 
-> **INTENT → EFFECT → EVIDENCE → TEMPO → LEARNING → CEREMONY**
+> **INTENT → EFFECT → EVIDENCE → TEMPO → CEREMONY**
