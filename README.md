@@ -1,3 +1,5 @@
+![Grok Cell](https://i.imgur.com/OnqBQbn.png) 
+
 # GrokCell
 
 Fifteen skills forming an organizational runtime for a federated Grok Bot cell — command, reconnaissance, force composition, construction, recovery, assurance, and organizational learning.
