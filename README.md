@@ -37,6 +37,8 @@ If any fail, keep the skill.
 | [PROFILE.md](PROFILE.md) | Slots the adopter fills. Not committed with real values. |
 | [skills/federated-cell/SKILL.md](skills/federated-cell/SKILL.md) | When to form a Cell, spawn test, do-alone vs park. |
 | [skills/hunt-apply/SKILL.md](skills/hunt-apply/SKILL.md) | Three apply rails: LinkedIn Easy Apply, Greenhouse, YC Work at a Startup. ChatGPT for personal questions. Stop at submit. |
+| [skills/grokcell-mission-command/SKILL.md](skills/grokcell-mission-command/SKILL.md) | Command layer. Issues intent and authority. ODA owns local organization. Recon / Force Generation / OpsGraph / Sentinel / Sustainment are interfaces, not bot names. Do not spawn to match them. |
+| [skills/grokcell-oda/SKILL.md](skills/grokcell-oda/SKILL.md) | Organizational runtime. Organization exists for the mission; do not spawn to match Scout/Forge/Integrator labels. |
 | [routines/prepare-then-stop.md](routines/prepare-then-stop.md) | Weekday prepare-then-stop template. Silence is valid. |
 
 Only skills that have been run, or Cell laws already locked, live here. No invented rails.

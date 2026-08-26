@@ -74,6 +74,26 @@ One PDF per apply. Pick by the req.
 
 Do not add a fourth writer in the human's voice. Outreach lists stay separate from apply lists.
 
+## ODA functions
+
+Map ODA functions onto existing owners. Do not spawn a bot to fill a label. Leave Fill empty until you assign an existing name.
+
+| Slot | Role | Fill |
+|---|---|---|
+| FEDERATION_COMMAND | thin command, common picture, scarce resources. Only mouth if same as MOUTH | |
+| INTEGRATOR | COHERE. Intent, local picture, split/merge, integrate artifacts | |
+| SCOUT | SENSE. Recon, evidence, unknowns, source validation | |
+| FORGE | MAKE. Implementation, artifacts, code, experiments | |
+
+## Command authority
+
+| Slot | Meaning | Fill |
+|---|---|---|
+| CONTROL_MODE | MISSION / HYBRID / DETAILED. Empty means MISSION. | |
+| AUTHORITY_AUTONOMOUS | Actions the cell may decide and execute without asking. | |
+| AUTHORITY_APPROVAL | Actions that wait for authorization. | |
+| AUTHORITY_PROHIBITED | Actions not authorized under this mission. | |
+
 ## Runtime
 
 | Slot | Fill |
