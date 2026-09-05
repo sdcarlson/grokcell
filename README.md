@@ -4,7 +4,22 @@
 
 <h1 align="center">GrokCell</h1>
 
-Fifteen skills forming an organizational runtime for a federated Grok Bot cell — command, reconnaissance, force composition, construction, recovery, assurance, and organizational learning.
+Reusable Grok Bot templates and skills for problem-solving, product ideas, review, and code simplification.
+
+## Bots
+
+- [First Principles](bots/first-principles/README.md) - clarify the problem, question assumptions, and choose a next step.
+- [Product Ideation](bots/product-ideation/README.md) - turn customer problems into ideas and inexpensive tests.
+- [Red Flag](bots/red-flag/README.md) - check plans, code, and AI answers for consequential failures and unsupported claims.
+- [Garbage Collector](bots/garbage-collector/README.md) - simplify code while preserving required behavior.
+
+Each package includes the source instructions, a profile, a public Bot link, and documented behavior checks. These are experiments with bounded test evidence, not guarantees of model behavior. The public template retains the name **Aggressive Product Ideation**.
+
+Start with the [bot guide](bots/README.md). The optional [Firstmate workflow](bots/workflow/README.md) helps choose a useful specialist and check its answer; using all four is not required.
+
+## Coordination skills
+
+The original fifteen `grokcell-*` skills cover coordination, research, construction, recovery, review, and learning. They remain separate from the four standalone Bot packages below `bots/`.
 
 ## Layout
 
