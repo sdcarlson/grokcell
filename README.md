@@ -47,7 +47,7 @@ To use a Bot, open its package and follow the public link, or copy its `skills/<
 
 ## Project context
 
-Built by Seth Carlson in August and September 2026. The four templates were published to Grok Bot on September 4-5, 2026. Garbage Collector originated in [SyberLabs/grok-bot-aggressive-deletion](https://github.com/SyberLabs/grok-bot-aggressive-deletion). Behavior checks are bounded observations from those sessions, not guarantees of model behavior, and editing source here does not update the deployed public Bots. See [Contributing](CONTRIBUTING.md) to propose a change.
+A SyberLabs project built by Seth Carlson and Mateo Robles ([@sykosyber](https://github.com/sykosyber)) in August and September 2026. The four templates were published to Grok Bot on September 4-5, 2026. Garbage Collector originated in [SyberLabs/grok-bot-aggressive-deletion](https://github.com/SyberLabs/grok-bot-aggressive-deletion). Behavior checks are bounded observations from those sessions, not guarantees of model behavior, and editing source here does not update the deployed public Bots. See [Contributing](CONTRIBUTING.md) to propose a change.
 
 ## License
 
