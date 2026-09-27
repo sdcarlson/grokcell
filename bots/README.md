@@ -32,7 +32,7 @@ Honor the request's scope. Stop when the result is complete, a decisive next exp
 
 ## Evidence
 
-Each package separates prepared cases, observed behavior, and limitations. Native observations were recorded during setup on September 4–5, 2026 and were not rerun during the source migration. Public share links were verified in those publication sessions; this repository does not claim marketplace catalog admission.
+Each package separates prepared cases, observed behavior, and limitations. Native observations were recorded during setup on September 4-5, 2026 and were not rerun during the source migration. Public share links were verified in those publication sessions; this repository does not claim marketplace catalog admission.
 
 Garbage Collector also includes [reproducible Python fixture checks](garbage-collector/eval/README.md). They check example code, not a model's reasoning quality.
 
